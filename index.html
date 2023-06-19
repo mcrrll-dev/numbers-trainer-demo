@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>French Numbers Trainer Demo</title>
+</head>
+
+<body>
+    <h1>French Numbers Trainer Demo</h1>
+    <p>Learning to recognize numbers in spoken french is hard!</p><p>This demo trainer was built with JavaScript and utilizes the SpeechSynthesis interface of the Web Speech API to speak a number. An event listener reveals the number once it has finished playing. The final score is displayed after quitting.</p>
+    <p id="instructions">When you're ready to start, press the button below.</p>
+    <div id="top-row">
+        <button id="start">Start</button>
+        <button id="quit" class="deactivated">Quit</button>
+        <div id="options-row" class="deactivated">
+            Maximum:
+            <button class="max-button selected-max">100</button>
+            <button class="max-button">1000</button>
+            <button class="max-button">10000</button>
+            <button class="max-button">100000</button>
+            <button class="max-button">1000000</button>
+            <button class="max-button">10000000</button>
+        </div>
+    </div>
+    </div>
+    <div id="trainer-container" class="deactivated">
+        <div id="trainer-inner">
+            <div id="numbers-container">
+                <p id="num-span" class="fade-in"></p>
+            </div>
+        </div>
+        <div id="progress-row">
+            <button id="fail">Fail</button>
+            <button id="pass">Pass</button>
+        </div>
+    </div>
+    <p id="score-container">
+    </p>
+    <script src="app.js"></script>
+</body>
+
+</html>

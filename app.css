@@ -1,0 +1,238 @@
+body {
+    background-color: #e9f3f5;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    color: #007188;
+}
+
+button {
+    background-color: #51929f;
+    color: #FCFEFE;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover:enabled {
+    /* opacity: 0.75; */
+    filter: saturate(50%);
+}
+
+button:disabled {
+    background-color: #acc5ca;
+}
+
+#top-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 3vw;
+}
+
+#quit {
+    background-color: #656565;
+}
+
+#options-row>button {
+    font-size: 2.5vw;
+}
+
+#trainer-container {
+    width: 100%;
+    height: 300px;
+}
+
+#trainer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#numbers-container {
+    background-color: #FCFEFE;
+    border-radius: 15px;
+    height: 300px;
+    margin: 10px 0px;
+}
+
+#trainer-container.fade-out {
+    opacity: 0;
+}
+
+#score-container {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.deactivated {
+    display: none;
+}
+
+#num-span {
+    font-size: 5em;
+    text-align: center;
+}
+
+#progress-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#progress-row>button {
+    width: 100px;
+}
+
+#pass {
+    background-color: #37b727;
+    font-size: inherit;
+}
+
+#fail {
+    background-color: #d54646;
+    font-size: inherit;
+}
+
+.selected-max {
+    background-color: #acc5ca;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 768px) {
+    #top-row {
+        font-size: inherit;
+    }
+
+    #quit,
+    #start {
+        font-size: inherit;
+    }
+
+    #options-row>button {
+        font-size: inherit;
+    }
+}
+
+/* Fade in effect */
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade out effect */
+
+.fade-out {
+    animation: fadeOut ease 8s;
+    -webkit-animation: fadeOut ease 8s;
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+    -ms-animation: fadeOut ease 8s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
